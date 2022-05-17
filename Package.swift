@@ -12,7 +12,7 @@ let package = Package(
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
             name: "libwebp",
-            targets: ["libwebp", "libwebp"]),
+            targets: ["libwebp", "libwebpmux"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
