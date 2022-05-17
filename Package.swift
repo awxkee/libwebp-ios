@@ -4,7 +4,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "webp",
+    name: "libwebp",
     platforms: [
         .macOS(.v10_10), .iOS(.v13)
     ],
