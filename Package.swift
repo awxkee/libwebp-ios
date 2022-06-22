@@ -9,10 +9,9 @@ let package = Package(
         .macOS(.v10_10), .iOS(.v13), .macCatalyst(.v14)
     ],
     products: [
-        // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
             name: "libwebp",
-            targets: ["libwebp", "libwebpmux"]),
+            targets: ["libwebp", "libwebpmux", "libwebpdemux"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -20,6 +19,7 @@ let package = Package(
     ],
     targets: [
         .binaryTarget(name: "libwebp", path: "Sources/libwebp.xcframework"),
-        .binaryTarget(name: "libwebpmux", path: "Sources/libwebpmux.xcframework")
+        .binaryTarget(name: "libwebpmux", path: "Sources/libwebpmux.xcframework"),
+        .binaryTarget(name: "libwebpdemux", path: "Sources/libwebpdemux.xcframework")
     ]
 )
