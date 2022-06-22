@@ -1,3 +1,3 @@
 # libwebp.swift
 
-A description of this package.
+## Just a simple framework wrapper for libwebp
