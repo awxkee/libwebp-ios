@@ -11,7 +11,7 @@ let package = Package(
     products: [
         .library(
             name: "libwebp",
-            targets: ["libwebp", "libwebpmux", "libwebpdemux"]),
+            targets: ["libwebp", "libwebpmux", "libwebpdemux", "libsharpyuv"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -20,6 +20,7 @@ let package = Package(
     targets: [
         .binaryTarget(name: "libwebp", path: "Sources/libwebp.xcframework"),
         .binaryTarget(name: "libwebpmux", path: "Sources/libwebpmux.xcframework"),
-        .binaryTarget(name: "libwebpdemux", path: "Sources/libwebpdemux.xcframework")
+        .binaryTarget(name: "libwebpdemux", path: "Sources/libwebpdemux.xcframework"),
+        .binaryTarget(name: "libsharpyuv", path: "Sources/libsharpyuv.xcframework")
     ]
 )
