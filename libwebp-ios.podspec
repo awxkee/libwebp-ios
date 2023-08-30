@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |spec|
   spec.name         = "libwebp-ios"
-  spec.version      = "1.0.8"
+  spec.version      = "1.0.9"
   spec.summary      = "Prebuilt binaries for libwebp"
   spec.description  = "Simple provider for libwebp for iOS with prebuild binaries"
   spec.homepage     = 'https://github.com/awxkee/libwebp-ios'
@@ -25,7 +25,8 @@ Pod::Spec.new do |spec|
   spec.preserve_paths = 'Sources/libsharpyuv.xcframework', 'Sources/libwebp.xcframework', 'Sources/libwebpdemux.xcframework', 'Sources/libwebpmux.xcframework'
   spec.pod_target_xcconfig = {
       'OTHER_CXXFLAGS' => '$(inherited) -std=c++20',
-      'HEADER_SEARCH_PATHS' => '$(inherited) "$(PODS_TARGET_SRCROOT)/Sources/libsharpyuv.xcframework/ios-arm64/Headers/*.h" "$(PODS_TARGET_SRCROOT)/Sources/libwebp.xcframework/ios-arm64/Headers/*.h"'
+      'HEADER_SEARCH_PATHS' => '$(inherited) "$(PODS_TARGET_SRCROOT)/Sources/libsharpyuv.xcframework/ios-arm64/Headers/*.h" "$(PODS_TARGET_SRCROOT)/Sources/libwebp.xcframework/ios-arm64/Headers/*.h"',
+       'EXCLUDED_ARCHS[sdk=watchsimulator*]' => 'i386'
   }
   spec.libraries = 'c++'
   spec.requires_arc = true
