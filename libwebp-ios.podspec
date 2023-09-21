@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |spec|
   spec.name         = "libwebp-ios"
-  spec.version      = "1.0.9"
+  spec.version      = "1.0.10"
   spec.summary      = "Prebuilt binaries for libwebp"
   spec.description  = "Simple provider for libwebp for iOS with prebuild binaries"
   spec.homepage     = 'https://github.com/awxkee/libwebp-ios'
