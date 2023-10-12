@@ -11,14 +11,14 @@ let package = Package(
     products: [
         .library(
             name: "libwebp-ios",
-            targets: ["libwebp", "libwebpmux", "libwebpdemux", "libsharpyuv"]),
+            targets: ["libwebp-ios", "libwebpmux", "libwebpdemux", "libsharpyuv"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
         // .package(url: /* package url */, from: "1.0.0"),
     ],
     targets: [
-        .binaryTarget(name: "libwebp", path: "Sources/libwebp.xcframework"),
+        .binaryTarget(name: "libwebp-ios", path: "Sources/libwebp.xcframework"),
         .binaryTarget(name: "libwebpmux", path: "Sources/libwebpmux.xcframework"),
         .binaryTarget(name: "libwebpdemux", path: "Sources/libwebpdemux.xcframework"),
         .binaryTarget(name: "libsharpyuv", path: "Sources/libsharpyuv.xcframework")
