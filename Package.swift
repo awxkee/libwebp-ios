@@ -4,13 +4,13 @@
 import PackageDescription
 
 let package = Package(
-    name: "libwebp",
+    name: "libwebp-ios",
     platforms: [
         .macOS(.v10_10), .iOS(.v13), .macCatalyst(.v14), .tvOS(.v11), .watchOS(.v6)
     ],
     products: [
         .library(
-            name: "libwebp",
+            name: "libwebp-ios",
             targets: ["libwebp", "libwebpmux", "libwebpdemux", "libsharpyuv"]),
     ],
     dependencies: [
